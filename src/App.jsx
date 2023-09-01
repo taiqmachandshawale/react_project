@@ -1,26 +1,21 @@
 import React from "react";
-import Card from "./Card";
-
-import Sdata from "./Sdata";
+import "./index.css";
 
 const App = () => {
-  // console.log(Sdata[0].link);
-
   return (
-    <>
-      <h1 className="heading_style">List of top 3 Netflix series in 2023</h1>
-      {Sdata.map((val, index) => {
-        console.log(index);
-        return (
-          <Card
-            imgsrc={val.imgsrc}
-            title={val.title}
-            sname={val.sname}
-            link={val.link}
-          />
-        );
-      })}
-    </>
+    <div className="main_div">
+      <div className="center_div">
+        <br />
+        <h1> ToDo List</h1>
+        <br />
+        <input type="text" placeholder="Add a Items" />
+        <button>+</button>
+
+        <ol>
+            <li>Buy Apple</li>
+        </ol>
+      </div>
+    </div>
   );
 };
 
